@@ -2,15 +2,27 @@
 
 This has no context, it's just a test project to show the functionality of `setup.py`. 
 
-## How to install
+## How to Install
 
-From the same directory as the `setup.py` file, running 
+You can either build the package from local-source, remote-source, or the downloaded `.whl` file
 
+### Build from local-source
+
+    $ git clone https://github.com/adj97/py_local_package_mwe.git
+    $ cd py_local_package_mwe
     $ pip install .
 
-will prepare the local package as well as installing any 3rd party dependencies (like having a `req.txt` file).
+### Build from remote-source
 
-## Then how to use
+    $ pip install git+https://github.com/adj97/py_local_package_mwe
+
+### Build from local `.whl` file
+
+First download the `.whl` package file from the latest successful actions workflow published artefacts. Then
+
+    $ pip install <path to downloaded whl file>/<package name>.whl
+
+## How to Use
 
 The above will install the module locally so you can 
 
