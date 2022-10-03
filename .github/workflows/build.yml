@@ -3,7 +3,7 @@ name: Build python package and archive wheel
 on:
   push:
     branches:
-      - feature/*
+      - main
 
 jobs:
   myjob: 
