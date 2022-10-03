@@ -22,3 +22,8 @@ jobs:
     - name: Build package
       run: |
         python setup.py bdist_wheel
+    - name: Publish whl artefact
+      uses: actions/upload-artifact@v3
+      with:
+        name: package wheel
+        path: dist/*.whl
