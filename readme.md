@@ -14,7 +14,7 @@ You can either build the package from local-source, remote-source, or the downlo
 
 ### Build from remote-source
 
-    $ pip install git+https://github.com/adj97/py_local_package_mwe
+    $ pip install git+https://github.com/adj97/py_local_package_mwe@main
 
 ### Build from local `.whl` file
 
