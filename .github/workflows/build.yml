@@ -1,0 +1,14 @@
+name: Build python package and archive wheel
+
+on:
+  push:
+    branches:
+      - feature/*
+
+jobs:
+  myjob: 
+    name: my job description
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@main
